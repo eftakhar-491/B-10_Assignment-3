@@ -20,8 +20,66 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Vanila css for font -->
     <style>
+      @keyframes slider2 {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(0);
+        }
+        30% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(-100%);
+        }
+        55% {
+          transform: translateX(-200%);
+        }
+        75% {
+          transform: translateX(-200%);
+        }
+        80% {
+          transform: translateX(-300%);
+        }
+        100% {
+          transform: translateX(-300%);
+        }
+      }
+      @keyframes slider {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(0);
+        }
+        30% {
+          transform: translateX(-300px);
+        }
+        50% {
+          transform: translateX(-300px);
+        }
+        55% {
+          transform: translateX(-650px);
+        }
+        75% {
+          transform: translateX(-650px);
+        }
+        80% {
+          transform: translateX(-1000px);
+        }
+        100% {
+          transform: translateX(-1000px);
+        }
+      }
       .manrope {
         font-family: "Manrope";
+      }
+      .cu-slider {
+        animation: slider 16s infinite;
+      }
+      .cu-slider2 {
+        animation: slider2 16s;
       }
     </style>
   </head>
@@ -363,6 +421,203 @@
               <img class="w-full" src="./assets/img5.png" alt="" />
             </div>
           </div>
+        </div>
+      </section>
+      <!-- own create section : service price -->
+
+      <section class="relative my-24 w-11/12 lg:w-4/5 mx-auto mb-32">
+        <h1 class="text-3xl lg:text-5xl font-extrabold text-center mb-2">
+          Our Service <span class="text-[#ABEF5F]">&</span> Fees
+        </h1>
+        <p class="max-w-[650px] mx-auto text-center mb-9">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        <!-- carousel details -->
+        <div class="lg:h-[500px] h-[700px] carousel w-full rounded-xl">
+          <div
+            id="item1"
+            class="cu-slider2 flex flex-col items-center lg:items-start lg:justify-center carousel-item w-full bg-[url('./assets/burn1.jpg')] bg-cover bg-no-repeat bg-center"
+          >
+            <div
+              class="lg:ml-24 mt-20 lg:mt-0 w-fit rounded-xl backdrop-blur-sm bg-white/30 p-9"
+            >
+              <h1 class="text-3xl font-extrabold">Burn House Restore</h1>
+
+              <ul class="text-sm font-semibold mt-5 space-y-1">
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />High-Quality
+                  Materials
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Exquisite Design
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Tailored
+                  Customization
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Energy Efficiency
+                </li>
+              </ul>
+              <h2 class="mt-5 text-2xl font-bold">$390.00</h2>
+              <div
+                class="mt-5 lg:w-fit font-extrabold text-lg flex justify-center lg:justify-between items-center gap-3 cursor-pointer bg-[#ABEF5F80] rounded-3xl px-5 py-2"
+              >
+                Book A Session
+                <div
+                  class="w-7 h-7 rounded-full px-1 -rotate-45 flex items-center box-border bg-[#ABEF5F]"
+                >
+                  <img src="./icon/arrow-black.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="item2"
+            class="cu-slider2 flex flex-col items-center lg:items-start lg:justify-center carousel-item w-full bg-[url('./assets/burn2.jpg')] bg-cover bg-no-repeat bg-center"
+          >
+            <div
+              class="lg:ml-24 mt-20 lg:mt-0 w-fit rounded-xl backdrop-blur-sm bg-white/30 p-9"
+            >
+              <h1 class="text-3xl font-extrabold">Heritage Barn Designs</h1>
+
+              <ul class="text-sm font-semibold mt-5 space-y-1">
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Authentic
+                  Craftsmanship Materials
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Premium
+                  Construction
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Historical Design
+                  Elements Customization
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Modern Comforts
+                </li>
+              </ul>
+              <h2 class="mt-5 text-2xl font-bold">$799.00</h2>
+              <div
+                class="mt-5 lg:w-fit font-extrabold text-lg flex justify-center lg:justify-between items-center gap-3 cursor-pointer bg-[#ABEF5F80] rounded-3xl px-5 py-2"
+              >
+                Book A Session
+                <div
+                  class="w-7 h-7 rounded-full px-1 -rotate-45 flex items-center box-border bg-[#ABEF5F]"
+                >
+                  <img src="./icon/arrow-black.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="item3"
+            class="cu-slider2 flex flex-col items-center lg:items-start lg:justify-center carousel-item w-full bg-[url('./assets/burn3.jpg')] bg-cover bg-no-repeat bg-center"
+          >
+            <div
+              class="lg:ml-24 mt-20 lg:mt-0 w-fit rounded-xl backdrop-blur-sm bg-white/30 p-9"
+            >
+              <h1 class="text-3xl font-extrabold">Rustic Charm Builders</h1>
+
+              <ul class="text-sm font-semibold mt-5 space-y-1">
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Personalized
+                  Touches
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Seamless
+                  Indoor-Outdoor Living
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Natural Materials
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Personalized
+                  Touches
+                </li>
+              </ul>
+              <h2 class="mt-5 text-2xl font-bold">$590.00</h2>
+              <div
+                class="mt-5 lg:w-fit font-extrabold text-lg flex justify-center lg:justify-between items-center gap-3 cursor-pointer bg-[#ABEF5F80] rounded-3xl px-5 py-2"
+              >
+                Book A Session
+                <div
+                  class="w-7 h-7 rounded-full px-1 -rotate-45 flex items-center box-border bg-[#ABEF5F]"
+                >
+                  <img src="./icon/arrow-black.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="item4"
+            class="cu-slider2 flex flex-col items-center lg:items-start lg:justify-center carousel-item w-full bg-[url('./assets/burn4.jpg')] bg-cover bg-no-repeat bg-center"
+          >
+            <div
+              class="lg:ml-24 mt-20 lg:mt-0 w-fit rounded-xl backdrop-blur-sm bg-white/30 p-9"
+            >
+              <h1 class="text-3xl font-extrabold">Classic Barn Creations</h1>
+
+              <ul class="text-sm font-semibold mt-5 space-y-1">
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Timeless Design
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Superior
+                  Craftsmanship
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />Functional Spaces
+                </li>
+                <li class="flex items-center gap-3">
+                  <img src="./icon/arrow-black.png" alt="" />High-End Finishes
+                </li>
+              </ul>
+              <h2 class="mt-5 text-2xl font-bold">$999.00</h2>
+              <div
+                class="mt-5 lg:w-fit font-extrabold text-lg flex justify-center lg:justify-between items-center gap-3 cursor-pointer bg-[#ABEF5F80] rounded-3xl px-5 py-2"
+              >
+                Book A Session
+                <div
+                  class="w-7 h-7 rounded-full px-1 -rotate-45 flex items-center box-border bg-[#ABEF5F]"
+                >
+                  <img src="./icon/arrow-black.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carousel project img -->
+
+        <div
+          class="lg:h-[500px] h-[300px] absolute -right-0 lg:right-24 top-[85%] lg:top-[40%] carousel carousel-center rounded-box max-w-md space-x-4"
+        >
+          <div class="cu-slider carousel-item">
+            <img src="./assets/cu1.jpg" class="rounded-box" />
+          </div>
+          <div class="cu-slider carousel-item">
+            <img src="./assets/cu2.jpg" class="rounded-box" />
+          </div>
+          <div class="cu-slider carousel-item">
+            <img src="./assets/cu3.jpg" class="rounded-box" />
+          </div>
+          <div class="cu-slider carousel-item">
+            <img src="./assets/cu2.jpg" class="rounded-box" />
+          </div>
+        </div>
+
+        <!-- carousel control btn -->
+        <div
+          class="flex w-full justify-center lg:justify-start lg:w-fit gap-2 py-2 lg:ml-[200px] absolute bottom-[155px] lg:bottom-2 bg-[#ABEF5F80] p-3 rounded-xl"
+        >
+          <a href="#item1" class="btn btn-xs bg-[#ABEF5F]">i</a>
+
+          <a href="#item2" class="btn btn-xs bg-[#ABEF5F]">ii</a>
+
+          <a href="#item3" class="btn btn-xs bg-[#ABEF5F]">iii</a>
+          <a href="#item4" class="btn btn-xs bg-[#ABEF5F]">vi</a>
         </div>
       </section>
 
